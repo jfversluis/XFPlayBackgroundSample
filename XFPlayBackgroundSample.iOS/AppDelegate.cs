@@ -22,10 +22,18 @@ namespace XFPlayBackgroundSample.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            EnableBackgroundPlaying();
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+
+        private void EnableBackgroundPlaying()
+        {
+            var currentSession = AVAudioSession.SharedInstance();
+            currentSession.SetCategory(AVAudioSessionCategory.Playback);
+            currentSession.SetActive(true);
         }
     }
 }
