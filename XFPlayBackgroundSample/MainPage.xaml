@@ -9,7 +9,10 @@
             <Label Text="Background Play Sample" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <!--<xct:MediaElement Source="https://sec.ch9.ms/ch9/e681/db02c281-503f-4015-ad6c-07e3909ee681/XamarinCommunityToolkitShowAppLocalization_mid.mp4" HeightRequest="200" />-->
-        <xct:MediaElement Source="https://jfversluis.dev/Sample.mp3" HeightRequest="200" />
+        <!--<xct:MediaElement Source="https://jfversluis.dev/Sample.mp3" HeightRequest="200"  />-->
+        <Button Text="Play" Clicked="Button_Clicked" />
+        <Button Text="Pause" Clicked="Button_Clicked_1" />
+        <Button Text="Stop" Clicked="Button_Clicked_2" />
     </StackLayout>
 
 </ContentPage>
